@@ -1,0 +1,25 @@
+{
+  "name": "MalWebExt",
+  "version": "1.0",
+  "description": "This extension was designed to detect phishing website using PhishTank API",
+  "permissions": ["webRequest", "webRequestBlocking", "tabs", "activeTab", "storage", "<all_urls>"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+    "matches": ["<all_urls>"],
+    "js": ["content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/MalWebExt_icon.png"
+    }
+  },
+  "icons":{
+	"48": "images/MalWebExt_icon.png"
+},
+  "manifest_version": 2
+}
