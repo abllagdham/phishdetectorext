@@ -17,7 +17,7 @@ var callback = function(detail){
         var body = {
           'url': url,
           'format': 'json',
-          'app_key': 'c09a4c2ad491326d32736c80c10746ef05425f7c8070f7f876a90e5be53e9c44'
+          'app_key': 'app_key_here'
         };
         try{
           xml = new XMLHttpRequest();
